@@ -1,0 +1,12 @@
+document.getElementById("donate-btn").addEventListener('click',function(event){
+    event.preventDefault();
+    document.getElementById("history-btn").classList.remove("active")
+    document.getElementById("donate-btn").classList.add("active")
+    showButton('card-container-section');
+})
+document.getElementById("history-btn").addEventListener('click',function(event){
+    event.preventDefault();
+    document.getElementById("donate-btn").classList.remove("active")
+    document.getElementById("history-btn").classList.add("active")
+    showButton('history-container');
+})

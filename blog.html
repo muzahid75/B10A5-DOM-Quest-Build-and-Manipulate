@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header class="bg-[#F9F7F3] lg:sticky top-0 transition-colors duration-300" id="header">
+        <!-- Navigation Bar -->
+        <nav class="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center py-6 px-4">
+            <!-- Blog Button -->
+            <div class="icon mb-4 md:mb-0">
+                <button id="home-btn" class="bg-[#B4F461] btn rounded text-lg md:text-2xl font-bold">
+                    Blog
+                </button>
+            </div>
+    
+            <!-- Logo and Title -->
+            <div class="flex justify-center items-center gap-3 mb-4 md:mb-0">
+                <img class="h-8 md:h-10" src="./assets/logo.png" alt="Logo">
+                <h1 class="text-lg md:text-2xl font-bold text-center">Donation Bangladesh</h1>
+            </div>
+    
+            <!-- Coin and Balance -->
+            <div class="flex justify-center items-center gap-3">
+                <img class="h-8 md:h-10" src="./assets/coin.png" alt="Coin">
+                <h1 id="total-balance" class="text-lg md:text-2xl font-bold">100000</h1>
+            </div>
+        </nav>
+    
+    </header>
+    
+    <main>
+        <section class="question-container max-w-screen-xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+            <!-- Title and Image -->
+            <div class="flex flex-col md:flex-row gap-3 items-center py-4">
+                <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center md:text-left">
+                    Important FAQ
+                </h1>
+                <img class="w-16 h-16 md:w-20 md:h-20" src="./assets/faq.png" alt="FAQ Icon">
+            </div>
+        
+            <!-- FAQ Accordion -->
+            <div class="join join-vertical w-full">
+                <!-- Question 1 -->
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" checked="checked" />
+                    <div class="collapse-title text-lg sm:text-xl font-medium">
+                        What is the document object model (DOM)?
+                    </div>
+                    <div class="collapse-content text-sm sm:text-base">
+                        <p>
+                            We know the full meaning of DOM is document object model. Document means the HTML document, while
+                            the model is like a tree. DOM takes an HTML document and converts it into an object, applying
+                            POEM (Property, Method, Object, Event) to manipulate and operate on elements.
+                        </p>
+                    </div>
+                </div>
+        
+                <!-- Question 2 -->
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-lg sm:text-xl font-medium">
+                        How to select an element from DOM?
+                    </div>
+                    <div class="collapse-content text-sm sm:text-base">
+                        <p>
+                            There are many ways to select an element from the DOM, such as:
+                            <code class="bg-gray-100 px-1 rounded">document.getElementById</code>,
+                            <code class="bg-gray-100 px-1 rounded">document.getElementsByClassName</code>,
+                            <code class="bg-gray-100 px-1 rounded">document.querySelectorAll</code>, etc.
+                        </p>
+                    </div>
+                </div>
+        
+                <!-- Question 3 -->
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-lg sm:text-xl font-medium">
+                        What is the event delegation context of a DOM? Why is it so useful?
+                    </div>
+                    <div class="collapse-content text-sm sm:text-base">
+                        <p>
+                            <p>
+                                Event Delegation is a JavaScript technique where a single event listener is added to a parent
+                                element to handle events for its child elements. It relies on event bubbling, where events
+                                propagate from a child element to its ancestors.
+                                Benefits:
+                                <code class="bg-gray-100 px-1 rounded">Improved Performance: Reduces memory usage by avoiding multiple event listeners.</code>,
+                            <code class="bg-gray-100 px-1 rounded">Handles Dynamic Elements: Works for elements added to the DOM later.</code>,
+                            <code class="bg-gray-100 px-1 rounded">Simplified Code: Cleaner and more maintainable.</code>
+                            <code class="bg-gray-100 px-1 rounded">Flexibility: Manages multiple child elements through a single listener.</code>, etc.
+                            </p>
+                        </p>
+                    </div>
+                </div>
+        
+                <!-- Question 4 -->
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-lg sm:text-xl font-medium">
+                        How do you manipulate element attributes and styles using the DOM?
+                    </div>
+                    <div class="collapse-content text-sm sm:text-base">
+                        <p>
+                            You can use methods like <code class="bg-gray-100 px-1 rounded">getAttribute</code>,
+                            <code class="bg-gray-100 px-1 rounded">setAttribute</code>, and
+                            <code class="bg-gray-100 px-1 rounded">style</code> to manipulate attributes and styles of an
+                            element dynamically.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    <script src="./js/blog.js"></script>
+</body>
+
+</html>

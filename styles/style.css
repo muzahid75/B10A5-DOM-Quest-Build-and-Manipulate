@@ -1,0 +1,10 @@
+.active{
+    color: white;
+    background-color: red;
+}
+.modal-action {
+    display: flex;           /* Enable Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically (if needed) */
+    height: 100%;            /* Optional: ensures full height for alignment */
+  }
