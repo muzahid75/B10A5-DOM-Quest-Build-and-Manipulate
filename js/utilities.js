@@ -8,14 +8,7 @@ function getTextFieldById(id){
     const inputNumber=parseFloat(inputValue);
     return inputNumber;
 }
-// function displayModal(title, message) {
-//     const detailsContainer = document.getElementById("modal-content");
-//     detailsContainer.innerHTML = `
-//         <h2 class="text-xl font-bold mb-3">${title}</h2>
-//         <p>${message}</p>
-//     `;
-//     document.getElementById("customModal").showModal();
-// }
+
 function displayModal() {
     const detailsContainer = document.getElementById("modal-content");
     detailsContainer.classList=("flex flex-col gap-5 justify-center items-center")
@@ -30,7 +23,6 @@ function displayModal() {
 function showButton(id){
     document.getElementById('card-container-section').classList.add("hidden");
     document.getElementById('history-container').classList.add("hidden");
-    
     document.getElementById(id).classList.remove("hidden");
 }
 window.addEventListener('scroll', () => {

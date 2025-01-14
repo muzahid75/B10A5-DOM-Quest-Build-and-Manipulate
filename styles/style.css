@@ -1,6 +1,6 @@
 .active{
     color: white;
-    background-color: red;
+    background-color: #B4F461;
 }
 .modal-action {
     display: flex;           /* Enable Flexbox */
